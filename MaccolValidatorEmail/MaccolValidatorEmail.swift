@@ -7,6 +7,7 @@
 
 import Foundation
 import Foundation
+import Alamofire
 
 public struct MaccolValidatorEmail {
     public static  func isValidEmail(_ email: String) -> Bool {
@@ -18,5 +19,38 @@ public struct MaccolValidatorEmail {
     public static func sayhellow() {
         print("hghfghfghfgh")
     }
+    
+    public func faceLivenessApi(completion: @escaping () -> Void) {
+             guard let apiURL = URL(string: "https://ipassplus.csdevhub.com/api/v1/aws/create/session") else { return }
+             
+             var parameters: [String: Any] = [:]
+             parameters["accessKeyId"] = "AKIATYNYEEOCH5HZ5X2E"
+             parameters["secretAccessKey"] = "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"
+             
+             AF.request(apiURL, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: HTTPHeaders(["Content-Type": "application/json"]))
+                 .responseJSON { response in
+                     let status = response.response?.statusCode
+                     
+                     if status == 201 {
+                         print(response)
+                         print(response.result)
+                         
+                         if let value = response.value as? [String: Any] {
+                             print(value)
+                             print("-*-*-*-*-**-*-*--*-")
+
+                         } else {
+
+                         }
+                     } else {
+                         // Show Alert error
+                     }
+                     
+                     completion()
+                 }
+         }
+    
+    
+    
 }
 
