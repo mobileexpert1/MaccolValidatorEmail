@@ -28,7 +28,7 @@ public class MaccolValidatorEmail {
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
 
         let parameters: [String: Any] = [
-            "accessKeyId": "AKIATYNYEEOCH5HZ5X2E",
+            "accessKeyId": "AKIATYNYEEOCH5HZ5X2E1",
             "secretAccessKey": "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"
         ]
 
