@@ -9,7 +9,7 @@ import Foundation
 import Foundation
 import Alamofire
 
-public struct MaccolValidatorEmail {
+public class MaccolValidatorEmail {
     public static  func isValidEmail(_ email: String) -> Bool {
        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
 
@@ -20,7 +20,7 @@ public struct MaccolValidatorEmail {
         print("hghfghfghfgh")
     }
     
-    public func faceLivenessApi(completion: @escaping () -> Void) {
+    public static func faceLivenessApi(completion: @escaping () -> Void) {
              guard let apiURL = URL(string: "https://ipassplus.csdevhub.com/api/v1/aws/create/session") else { return }
              
              var parameters: [String: Any] = [:]
