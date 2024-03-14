@@ -15,4 +15,5 @@ spec.source       = { :git => "https://github.com/mobileexpert1/MaccolValidatorE
 spec.source_files  = 'MaccolValidatorEmail/*.swift', 'MaccolValidatorEmail/DatabaseDownloading.swift'
  spec.swift_version = '5.0'
  spec.dependency 'DocumentReader'
+  spec.license = 'regula.license'
 end
