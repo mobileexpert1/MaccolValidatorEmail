@@ -6,19 +6,10 @@
 //
 
 import Foundation
-import Foundation
+import DocumentReader
 
 
 public class CeateessionApi {
-    public static  func isValidEmail(_ email: String) -> Bool {
-       let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-
-       let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-       return emailPred.evaluate(with: email)
-   }
-    public static func sayhellow() {
-        print("hghfghfghfgh")
-    }
     
     public static func faceLivenessApi(completion: @escaping ([String: Any]?) -> Void) {
         guard let apiURL = URL(string: "https://ipassplus.csdevhub.com/api/v1/aws/create/session") else { return }

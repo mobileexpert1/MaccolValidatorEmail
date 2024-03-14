@@ -6,32 +6,88 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		5111B24D67EC6553E3EB451E2EE962AF /* RegulaCommon */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D45C3069159C1755403E082B6C192ACC /* Build configuration list for PBXAggregateTarget "RegulaCommon" */;
+			buildPhases = (
+				76849FCB6F62660F7C6526767E62115D /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = RegulaCommon;
+		};
+		A66EC006F00F0BFCF640E7ACE4FEC8B1 /* DocumentReader */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D5F976AEE2133F967B8DEA9B20E6A07F /* Build configuration list for PBXAggregateTarget "DocumentReader" */;
+			buildPhases = (
+				D9AA7F614E3A851744F9D8BBA5C90677 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				AD7614C34A5F4FBD5C48ADBB1DFF14A1 /* PBXTargetDependency */,
+			);
+			name = DocumentReader;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		2BE8CB8E7C91EEF7BA0407C17CD2C0DE /* Pods-MaccolValidatorEmail-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A4E8783EDFD1FD632DA78BA6161CCC /* Pods-MaccolValidatorEmail-dummy.m */; };
-		8C4EE4035D3A30CFB72CBC76DD5F9221 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		9E3C13A5C5391ED5C3E707B1D18D0DBD /* Pods-MaccolValidatorEmail-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 013F69BE9B8CBDB084AE0D6899C6690B /* Pods-MaccolValidatorEmail-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		381B139ED8DC16FE7916928EAB99C29A /* Pods-MaccolValidatorEmail-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 013F69BE9B8CBDB084AE0D6899C6690B /* Pods-MaccolValidatorEmail-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1E491A9B97C51F1B12CE965387D1EC4 /* Pods-MaccolValidatorEmail-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A4E8783EDFD1FD632DA78BA6161CCC /* Pods-MaccolValidatorEmail-dummy.m */; };
+		E333054FF9C9BF4DAC89FC1956C3885C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3EBF1D8B472E0A52AB81584D2354F1DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5111B24D67EC6553E3EB451E2EE962AF;
+			remoteInfo = RegulaCommon;
+		};
+		A265940E15F3F6FD628D0C4E99A0E36B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A66EC006F00F0BFCF640E7ACE4FEC8B1;
+			remoteInfo = DocumentReader;
+		};
+		BD822FDBA3B7FBF9CA51C9D92BA83D5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5111B24D67EC6553E3EB451E2EE962AF;
+			remoteInfo = RegulaCommon;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		013F69BE9B8CBDB084AE0D6899C6690B /* Pods-MaccolValidatorEmail-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MaccolValidatorEmail-umbrella.h"; sourceTree = "<group>"; };
+		137273CC1242186D610C3A6217311EB4 /* RegulaCommon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RegulaCommon.debug.xcconfig; sourceTree = "<group>"; };
 		1B46B11F4A214540F5ED803D4883B00C /* Pods-MaccolValidatorEmail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MaccolValidatorEmail.debug.xcconfig"; sourceTree = "<group>"; };
 		2F87F25D81364C2F1F28F48B4D8F12AA /* Pods-MaccolValidatorEmail-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MaccolValidatorEmail-Info.plist"; sourceTree = "<group>"; };
 		346EB3FDFB2446478DA17A1DB575C067 /* Pods-MaccolValidatorEmail.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MaccolValidatorEmail.modulemap"; sourceTree = "<group>"; };
+		3E2ABA00400D8B7652AA83B3FBAD9441 /* RegulaCommon.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = RegulaCommon.xcframework; sourceTree = "<group>"; };
 		48864B2F5022BDDDE40E692E2D99FC78 /* Pods-MaccolValidatorEmail-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MaccolValidatorEmail-acknowledgements.plist"; sourceTree = "<group>"; };
+		48D15CCD1D0BF307A46937CCFCC97018 /* DocumentReader.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = DocumentReader.xcframework; sourceTree = "<group>"; };
 		4B780C6B1A2B6A55DC14D2A2C0CC4F56 /* Pods-MaccolValidatorEmail */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MaccolValidatorEmail"; path = Pods_MaccolValidatorEmail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7E9DF767C729E8DA075F5302BF3E05AD /* DocumentReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DocumentReader.debug.xcconfig; sourceTree = "<group>"; };
+		86495352F210579D0EA09CDC9CCA5CBD /* RegulaCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RegulaCommon.release.xcconfig; sourceTree = "<group>"; };
+		8CCBDDC84ED703BF6F493E52A0A816E1 /* DocumentReader-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "DocumentReader-xcframeworks.sh"; sourceTree = "<group>"; };
 		946907A141F46535D04D6C579AFBBF98 /* Pods-MaccolValidatorEmail-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MaccolValidatorEmail-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A07F3C88D5502A32CB327EF728EF51B5 /* Pods-MaccolValidatorEmail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MaccolValidatorEmail.release.xcconfig"; sourceTree = "<group>"; };
+		A359BC0CFEA1206AC43594A39ECB5529 /* DocumentReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DocumentReader.release.xcconfig; sourceTree = "<group>"; };
 		B1A4E8783EDFD1FD632DA78BA6161CCC /* Pods-MaccolValidatorEmail-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MaccolValidatorEmail-dummy.m"; sourceTree = "<group>"; };
+		D5E0077F27716EADBA02EFF2AAF32898 /* RegulaCommon-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "RegulaCommon-xcframeworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A575BD9D9C41FABBB29946A7C591D011 /* Frameworks */ = {
+		76582E10FA7D160D16710E0BFD7028FC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C4EE4035D3A30CFB72CBC76DD5F9221 /* Foundation.framework in Frameworks */,
+				E333054FF9C9BF4DAC89FC1956C3885C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +100,17 @@
 				4B780C6B1A2B6A55DC14D2A2C0CC4F56 /* Pods-MaccolValidatorEmail */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		2105769599321EBBE925D5E133F90461 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8CCBDDC84ED703BF6F493E52A0A816E1 /* DocumentReader-xcframeworks.sh */,
+				7E9DF767C729E8DA075F5302BF3E05AD /* DocumentReader.debug.xcconfig */,
+				A359BC0CFEA1206AC43594A39ECB5529 /* DocumentReader.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DocumentReader";
 			sourceTree = "<group>";
 		};
 		55998A6B817A86AADE969C34B3B7B8B3 /* Targets Support Files */ = {
@@ -78,11 +145,49 @@
 			path = "Target Support Files/Pods-MaccolValidatorEmail";
 			sourceTree = "<group>";
 		};
+		945A7D6912415EAF2F353BC3822F310D /* DocumentReader */ = {
+			isa = PBXGroup;
+			children = (
+				CAC6E3AAB3A0F2699E11653AA3A0C8D1 /* Frameworks */,
+				2105769599321EBBE925D5E133F90461 /* Support Files */,
+			);
+			name = DocumentReader;
+			path = DocumentReader;
+			sourceTree = "<group>";
+		};
+		946DC1B86D7F17962087602E7A17BF7A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5E0077F27716EADBA02EFF2AAF32898 /* RegulaCommon-xcframeworks.sh */,
+				137273CC1242186D610C3A6217311EB4 /* RegulaCommon.debug.xcconfig */,
+				86495352F210579D0EA09CDC9CCA5CBD /* RegulaCommon.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RegulaCommon";
+			sourceTree = "<group>";
+		};
+		B65DCB99D92BD7714D0F046B64486CF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E2ABA00400D8B7652AA83B3FBAD9441 /* RegulaCommon.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAC6E3AAB3A0F2699E11653AA3A0C8D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48D15CCD1D0BF307A46937CCFCC97018 /* DocumentReader.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				F024B0ABE9B8CD6BBA580587A03935B7 /* Pods */,
 				06CF8FE7D577DB470AD72A7237C06834 /* Products */,
 				55998A6B817A86AADE969C34B3B7B8B3 /* Targets Support Files */,
 			);
@@ -96,14 +201,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E49A9A1E6915F079D74672A67F9F6A27 /* RegulaCommon */ = {
+			isa = PBXGroup;
+			children = (
+				B65DCB99D92BD7714D0F046B64486CF4 /* Frameworks */,
+				946DC1B86D7F17962087602E7A17BF7A /* Support Files */,
+			);
+			name = RegulaCommon;
+			path = RegulaCommon;
+			sourceTree = "<group>";
+		};
+		F024B0ABE9B8CD6BBA580587A03935B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				945A7D6912415EAF2F353BC3822F310D /* DocumentReader */,
+				E49A9A1E6915F079D74672A67F9F6A27 /* RegulaCommon */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		FDF640BFF0B091892C02DAE2C27E39E2 /* Headers */ = {
+		CC87DB05FE014909A48D50DA90679A80 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E3C13A5C5391ED5C3E707B1D18D0DBD /* Pods-MaccolValidatorEmail-umbrella.h in Headers */,
+				381B139ED8DC16FE7916928EAB99C29A /* Pods-MaccolValidatorEmail-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,16 +236,18 @@
 /* Begin PBXNativeTarget section */
 		1C313F3D33B3AC94E475B6439B4D946B /* Pods-MaccolValidatorEmail */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 129B78AC2C99D778B48DB240C8A84481 /* Build configuration list for PBXNativeTarget "Pods-MaccolValidatorEmail" */;
+			buildConfigurationList = 677517962A11BD83054166C0A44F080C /* Build configuration list for PBXNativeTarget "Pods-MaccolValidatorEmail" */;
 			buildPhases = (
-				FDF640BFF0B091892C02DAE2C27E39E2 /* Headers */,
-				4B4023F05B4A853CD4C44BC8F6FCC2CD /* Sources */,
-				A575BD9D9C41FABBB29946A7C591D011 /* Frameworks */,
-				262E673566172C3050C7450A9E1AD1D2 /* Resources */,
+				CC87DB05FE014909A48D50DA90679A80 /* Headers */,
+				C3DCF0F385516E8560B37027AB299AEF /* Sources */,
+				76582E10FA7D160D16710E0BFD7028FC /* Frameworks */,
+				037CE30C84E6AFE0F9B7D6C51A33B40F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EC563050608E35394D75CDDC1FAF72FF /* PBXTargetDependency */,
+				BD1D3997CEF84D78A776ED625D22759A /* PBXTargetDependency */,
 			);
 			name = "Pods-MaccolValidatorEmail";
 			productName = Pods_MaccolValidatorEmail;
@@ -134,8 +260,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 14.0";
@@ -150,13 +276,15 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				A66EC006F00F0BFCF640E7ACE4FEC8B1 /* DocumentReader */,
 				1C313F3D33B3AC94E475B6439B4D946B /* Pods-MaccolValidatorEmail */,
+				5111B24D67EC6553E3EB451E2EE962AF /* RegulaCommon */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		262E673566172C3050C7450A9E1AD1D2 /* Resources */ = {
+		037CE30C84E6AFE0F9B7D6C51A33B40F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -165,18 +293,110 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		76849FCB6F62660F7C6526767E62115D /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/RegulaCommon/RegulaCommon-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/RegulaCommon/RegulaCommon-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/RegulaCommon/RegulaCommon-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9AA7F614E3A851744F9D8BBA5C90677 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/DocumentReader/DocumentReader-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/DocumentReader/DocumentReader-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/DocumentReader/DocumentReader-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		4B4023F05B4A853CD4C44BC8F6FCC2CD /* Sources */ = {
+		C3DCF0F385516E8560B37027AB299AEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BE8CB8E7C91EEF7BA0407C17CD2C0DE /* Pods-MaccolValidatorEmail-dummy.m in Sources */,
+				D1E491A9B97C51F1B12CE965387D1EC4 /* Pods-MaccolValidatorEmail-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		AD7614C34A5F4FBD5C48ADBB1DFF14A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RegulaCommon;
+			target = 5111B24D67EC6553E3EB451E2EE962AF /* RegulaCommon */;
+			targetProxy = 3EBF1D8B472E0A52AB81584D2354F1DC /* PBXContainerItemProxy */;
+		};
+		BD1D3997CEF84D78A776ED625D22759A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RegulaCommon;
+			target = 5111B24D67EC6553E3EB451E2EE962AF /* RegulaCommon */;
+			targetProxy = BD822FDBA3B7FBF9CA51C9D92BA83D5C /* PBXContainerItemProxy */;
+		};
+		EC563050608E35394D75CDDC1FAF72FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DocumentReader;
+			target = A66EC006F00F0BFCF640E7ACE4FEC8B1 /* DocumentReader */;
+			targetProxy = A265940E15F3F6FD628D0C4E99A0E36B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		00E22F1213022DCB55714F20857A534A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E9DF767C729E8DA075F5302BF3E05AD /* DocumentReader.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1B0CFF687CA798FFD2C38C922E87EB97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 137273CC1242186D610C3A6217311EB4 /* RegulaCommon.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		39F5B7CD9D2655A0D1F7D42E37920E8B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -243,7 +463,45 @@
 			};
 			name = Debug;
 		};
-		8CAA6A61C45BA706FB0664C7C6858933 /* Debug */ = {
+		48AE11E5630A5CBD4749DA7570D4BCF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A07F3C88D5502A32CB327EF728EF51B5 /* Pods-MaccolValidatorEmail.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MaccolValidatorEmail/Pods-MaccolValidatorEmail-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MaccolValidatorEmail/Pods-MaccolValidatorEmail.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AD663C5D6C65ADF3F7C66191B498A7FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1B46B11F4A214540F5ED803D4883B00C /* Pods-MaccolValidatorEmail.debug.xcconfig */;
 			buildSettings = {
@@ -279,6 +537,42 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		B56619A1B344A190ACFF5A53F9A9598F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A359BC0CFEA1206AC43594A39ECB5529 /* DocumentReader.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C23E874E6D73DCBC696F85A514B84D73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86495352F210579D0EA09CDC9CCA5CBD /* RegulaCommon.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
 		};
 		C873D3C071BDDC046D6E8F63C69C2591 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -342,61 +636,41 @@
 			};
 			name = Release;
 		};
-		E41963EAC49056C3AFEFE93E7C9F9FE0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A07F3C88D5502A32CB327EF728EF51B5 /* Pods-MaccolValidatorEmail.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MaccolValidatorEmail/Pods-MaccolValidatorEmail-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MaccolValidatorEmail/Pods-MaccolValidatorEmail.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		129B78AC2C99D778B48DB240C8A84481 /* Build configuration list for PBXNativeTarget "Pods-MaccolValidatorEmail" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8CAA6A61C45BA706FB0664C7C6858933 /* Debug */,
-				E41963EAC49056C3AFEFE93E7C9F9FE0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				39F5B7CD9D2655A0D1F7D42E37920E8B /* Debug */,
 				C873D3C071BDDC046D6E8F63C69C2591 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		677517962A11BD83054166C0A44F080C /* Build configuration list for PBXNativeTarget "Pods-MaccolValidatorEmail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD663C5D6C65ADF3F7C66191B498A7FA /* Debug */,
+				48AE11E5630A5CBD4749DA7570D4BCF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D45C3069159C1755403E082B6C192ACC /* Build configuration list for PBXAggregateTarget "RegulaCommon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B0CFF687CA798FFD2C38C922E87EB97 /* Debug */,
+				C23E874E6D73DCBC696F85A514B84D73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5F976AEE2133F967B8DEA9B20E6A07F /* Build configuration list for PBXAggregateTarget "DocumentReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E22F1213022DCB55714F20857A534A /* Debug */,
+				B56619A1B344A190ACFF5A53F9A9598F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

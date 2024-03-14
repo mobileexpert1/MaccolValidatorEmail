@@ -12,7 +12,7 @@ spec.homepage     = "https://github.com/mobileexpert1/MaccolValidatorEmail/tree/
   spec.platform     = :ios, "13.0"
     spec.ios.deployment_target = '13.0'
 spec.source       = { :git => "https://github.com/mobileexpert1/MaccolValidatorEmail.git", :tag => "#{spec.version}" }
-spec.source_files  = 'MaccolValidatorEmail/*.swift', 'MaccolValidatorEmail/DocumentReaderService.swift'
+spec.source_files  = 'MaccolValidatorEmail/*.swift', 'MaccolValidatorEmail/DatabaseDownloading.swift'
  spec.swift_version = '5.0'
  spec.dependency 'DocumentReader'
 end

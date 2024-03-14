@@ -6,6 +6,7 @@ target 'MaccolValidatorEmail' do
   use_frameworks!
 
   # Pods for MaccolValidatorEmail
+  pod 'DocumentReader'
 
 
 end
