@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75627B242BA2F29700984C6B /* FaceLiveness in Frameworks */ = {isa = PBXBuildFile; productRef = 75627B232BA2F29700984C6B /* FaceLiveness */; };
+		75627B262BA2F34D00984C6B /* FaceLivenssSDKView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75627B252BA2F34D00984C6B /* FaceLivenssSDKView.swift */; };
 		9566F5A68E8B5E19E349FA13 /* Pods_MaccolValidatorEmail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EF62031887824BDFC4FE5C8 /* Pods_MaccolValidatorEmail.framework */; };
 		C9B44F2A2B9D93770020FB4B /* MaccolValidatorEmail.h in Headers */ = {isa = PBXBuildFile; fileRef = C9B44F292B9D93770020FB4B /* MaccolValidatorEmail.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9B44F312B9D93AA0020FB4B /* MaccolValidatorEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B44F302B9D93AA0020FB4B /* MaccolValidatorEmail.swift */; };
@@ -15,6 +17,7 @@
 /* Begin PBXFileReference section */
 		06F503EDEAE9747A57BCD3A2 /* Pods-MaccolValidatorEmail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaccolValidatorEmail.debug.xcconfig"; path = "Target Support Files/Pods-MaccolValidatorEmail/Pods-MaccolValidatorEmail.debug.xcconfig"; sourceTree = "<group>"; };
 		5EF62031887824BDFC4FE5C8 /* Pods_MaccolValidatorEmail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaccolValidatorEmail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75627B252BA2F34D00984C6B /* FaceLivenssSDKView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceLivenssSDKView.swift; sourceTree = "<group>"; };
 		A84BED3A51F20C10089D3F1A /* Pods-MaccolValidatorEmail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaccolValidatorEmail.release.xcconfig"; path = "Target Support Files/Pods-MaccolValidatorEmail/Pods-MaccolValidatorEmail.release.xcconfig"; sourceTree = "<group>"; };
 		C9B44F262B9D93770020FB4B /* MaccolValidatorEmail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MaccolValidatorEmail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B44F292B9D93770020FB4B /* MaccolValidatorEmail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaccolValidatorEmail.h; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75627B242BA2F29700984C6B /* FaceLiveness in Frameworks */,
 				9566F5A68E8B5E19E349FA13 /* Pods_MaccolValidatorEmail.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,7 +43,6 @@
 				06F503EDEAE9747A57BCD3A2 /* Pods-MaccolValidatorEmail.debug.xcconfig */,
 				A84BED3A51F20C10089D3F1A /* Pods-MaccolValidatorEmail.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -47,6 +50,7 @@
 			isa = PBXGroup;
 			children = (
 				C9B44F302B9D93AA0020FB4B /* MaccolValidatorEmail.swift */,
+				75627B252BA2F34D00984C6B /* FaceLivenssSDKView.swift */,
 				C9B44F282B9D93770020FB4B /* MaccolValidatorEmail */,
 				C9B44F272B9D93770020FB4B /* Products */,
 				1D0D7012A78D295CA46FC48A /* Pods */,
@@ -107,6 +111,9 @@
 			dependencies = (
 			);
 			name = MaccolValidatorEmail;
+			packageProductDependencies = (
+				75627B232BA2F29700984C6B /* FaceLiveness */,
+			);
 			productName = MaccolValidatorEmail;
 			productReference = C9B44F262B9D93770020FB4B /* MaccolValidatorEmail.framework */;
 			productType = "com.apple.product-type.framework";
@@ -135,6 +142,9 @@
 				Base,
 			);
 			mainGroup = C9B44F1C2B9D93770020FB4B;
+			packageReferences = (
+				75627B222BA2F29700984C6B /* XCRemoteSwiftPackageReference "amplify-ui-swift-liveness" */,
+			);
 			productRefGroup = C9B44F272B9D93770020FB4B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -185,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9B44F312B9D93AA0020FB4B /* MaccolValidatorEmail.swift in Sources */,
+				75627B262BA2F34D00984C6B /* FaceLivenssSDKView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +418,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		75627B222BA2F29700984C6B /* XCRemoteSwiftPackageReference "amplify-ui-swift-liveness" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-ui-swift-liveness.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		75627B232BA2F29700984C6B /* FaceLiveness */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75627B222BA2F29700984C6B /* XCRemoteSwiftPackageReference "amplify-ui-swift-liveness" */;
+			productName = FaceLiveness;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C9B44F1D2B9D93770020FB4B /* Project object */;
 }
