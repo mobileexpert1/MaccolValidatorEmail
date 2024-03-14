@@ -10,7 +10,7 @@ import DocumentReader
 
 public class DataBaseDownloanding {
     
-    public func Startdownloding(completion: @escaping (String, String) -> Void) {
+    public static func Startdownloding(completion: @escaping (String, String) -> Void) {
         DocumentReaderService.shared.initializeDatabaseAndAPI(progress: { state in
             var progressValue = ""
             var status = ""
