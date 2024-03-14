@@ -10,12 +10,11 @@ import DocumentReader
 
 public class DataBaseDownloanding {
     
-    public func Startdownloding() -> (progressValue: String, status: String) {
-        var progressValue = ""
-        var status = ""
-        
-        DocumentReaderService.shared.initializeDatabaseAndAPI(progress: { [weak self] state in
-            guard let self = self else { return }
+    public func Startdownloding(completion: @escaping (String, String) -> Void) {
+        DocumentReaderService.shared.initializeDatabaseAndAPI(progress: { state in
+            var progressValue = ""
+            var status = ""
+            
             switch state {
             case .downloadingDatabase(progress: let progress):
                 let progressString = String(format: "%.1f", progress * 3)
@@ -29,8 +28,8 @@ public class DataBaseDownloanding {
                 status = text
                 print(text)
             }
+            
+            completion(progressValue, status)
         })
-        
-        return (progressValue, status)
     }
 }
