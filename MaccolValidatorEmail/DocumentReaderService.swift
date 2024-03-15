@@ -26,25 +26,18 @@ final class DocumentReaderService {
         DocReader.shared.deinitializeReader()
     }
 
+    
     func initializeDatabaseAndAPI(progress: @escaping (State) -> Void) {
         
-        guard let dataPath = Bundle.main.path(forResource: kRegulaLicenseFile, ofType: nil) else {
-            progress(.error("Missing Licence File in Bundle"))
-            return
-        }
-        guard let licenseData = try? Data(contentsOf: URL(fileURLWithPath: dataPath)) else {
-            progress(.error("Missing Licence File in Bundle"))
+        guard let licensePath = Bundle(for: type(of: self)).path(forResource: "regula.license", ofType: nil) else {
+            progress(.error("Missing License File in Framework Bundle"))
             return
         }
         
-//        guard let licensePath = Bundle(for: type(of: self)).path(forResource: "regula.license", ofType: nil) else {
-//            progress(.error("Missing License File in Framework Bundle"))
-//            return
-//        }
-//        guard let licenseData = try? Data(contentsOf: URL(fileURLWithPath: licensePath)) else {
-//            progress(.error("Unable to read License File"))
-//            return
-//        }
+        guard let licenseData = try? Data(contentsOf: URL(fileURLWithPath: licensePath)) else {
+            progress(.error("Unable to read License File"))
+            return
+        }
 
         DispatchQueue.global().async {
             DocReader.shared.prepareDatabase(
