@@ -20,48 +20,56 @@ final class DocumentReaderService {
     }
 
     static let shared = DocumentReaderService()
-    private init() { }
-
-    func deinitializeAPI() {
-        DocReader.shared.deinitializeReader()
-    }
-
     func initializeDatabaseAndAPI(progress: @escaping (State) -> Void) {
-        guard let dataPath = Bundle.main.path(forResource: "regula.license", ofType: nil) else {
-            progress(.error("Missing Licence File in Bundle11111"))
+        guard let licensePath = Bundle.main.path(forResource: "regula.license", ofType: nil) else {
+            progress(.error("Missing License File in Framework Bundle"))
             return
         }
-        guard let licenseData = try? Data(contentsOf: URL(fileURLWithPath: dataPath)) else {
-            progress(.error("Missing Licence File in Bundle22222"))
+        guard let licenseData = try? Data(contentsOf: URL(fileURLWithPath: licensePath)) else {
+            progress(.error("Unable to read License File"))
             return
         }
 
         DispatchQueue.global().async {
-            DocReader.shared.prepareDatabase(
-                databaseID: self.kRegulaDatabaseId,
-                progressHandler: { (inprogress) in
-                    progress(.downloadingDatabase(progress: inprogress.fractionCompleted))
-                },
-                completion: { (success, error) in
-                    if let error = error, !success {
-                        progress(.error("Database error: \(error.localizedDescription)"))
-                        return
-                    }
-                    let config = DocReader.Config(license: licenseData)
-                    DocReader.shared.initializeReader(config: config, completion: { (success, error) in
-                        DispatchQueue.main.async {
-                            progress(.initializingAPI)
-                            if success {
-                                progress(.completed)
-                            } else {
-                                progress(.error("Initialization error: \(error?.localizedDescription ?? "nil")"))
-                            }
-                        }
-                    })
+            // Mockup function
+            self.prepareDatabase(databaseID: self.kRegulaDatabaseId, progressHandler: { (inprogress) in
+                progress(.downloadingDatabase(progress: inprogress.fractionCompleted))
+            }) { (success, error) in
+                if let error = error, !success {
+                    progress(.error("Database error: \(error.localizedDescription)"))
+                    return
                 }
-            )
+                let config = DocReader.Config(license: licenseData) // Assuming you have a class named `DocReader` with a `Config` struct or class that accepts license data
+                // Mockup function
+                self.initializeReader(config: config, completion: { (success, error) in
+                    DispatchQueue.main.async {
+                        progress(.initializingAPI)
+                        if success {
+                            progress(.completed)
+                        } else {
+                            progress(.error("Initialization error: \(error?.localizedDescription ?? "nil")"))
+                        }
+                    }
+                })
+            }
         }
-        
     }
+
+    // Mockup function, replace with actual implementation
+    func prepareDatabase(databaseID: String, progressHandler: @escaping (Progress) -> Void, completion: @escaping (Bool, Error?) -> Void) {
+        // Your implementation here
+    }
+
+    // Mockup function, replace with actual implementation
+    func initializeReader(config: DocReader.Config, completion: @escaping (Bool, Error?) -> Void) {
+        // Your implementation here
+    }
+
 }
 
+// Mockup struct, replace with actual implementation
+struct DocReader {
+    struct Config {
+        let license: Data
+    }
+}
