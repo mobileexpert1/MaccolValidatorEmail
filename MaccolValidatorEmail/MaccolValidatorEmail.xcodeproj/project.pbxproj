@@ -13,6 +13,7 @@
 		75D698A02BA3332000DF0D3B /* CertificatesTA.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 75D6989C2BA3332000DF0D3B /* CertificatesTA.bundle */; };
 		75D698A12BA3332000DF0D3B /* Certificates.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 75D6989D2BA3332000DF0D3B /* Certificates.bundle */; };
 		75D698A22BA3332000DF0D3B /* regula.license in Resources */ = {isa = PBXBuildFile; fileRef = 75D6989E2BA3332000DF0D3B /* regula.license */; };
+		75D698A42BA40FB700DF0D3B /* regula.license in Sources */ = {isa = PBXBuildFile; fileRef = 75D6989E2BA3332000DF0D3B /* regula.license */; };
 		9566F5A68E8B5E19E349FA13 /* Pods_MaccolValidatorEmail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EF62031887824BDFC4FE5C8 /* Pods_MaccolValidatorEmail.framework */; };
 		C9B44F2A2B9D93770020FB4B /* MaccolValidatorEmail.h in Headers */ = {isa = PBXBuildFile; fileRef = C9B44F292B9D93770020FB4B /* MaccolValidatorEmail.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9B44F312B9D93AA0020FB4B /* MaccolValidatorEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B44F302B9D93AA0020FB4B /* MaccolValidatorEmail.swift */; };
@@ -209,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75D698A42BA40FB700DF0D3B /* regula.license in Sources */,
 				C9B44F312B9D93AA0020FB4B /* MaccolValidatorEmail.swift in Sources */,
 				75D698972BA3306F00DF0D3B /* DatabaseDownloading.swift in Sources */,
 				75D6989A2BA330F400DF0D3B /* DocumentReaderService.swift in Sources */,
