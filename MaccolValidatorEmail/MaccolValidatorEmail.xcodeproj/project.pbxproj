@@ -12,8 +12,7 @@
 		75D6989F2BA3332000DF0D3B /* CertificatesPA.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 75D6989B2BA3332000DF0D3B /* CertificatesPA.bundle */; };
 		75D698A02BA3332000DF0D3B /* CertificatesTA.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 75D6989C2BA3332000DF0D3B /* CertificatesTA.bundle */; };
 		75D698A12BA3332000DF0D3B /* Certificates.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 75D6989D2BA3332000DF0D3B /* Certificates.bundle */; };
-		75D698A22BA3332000DF0D3B /* regula.license in Resources */ = {isa = PBXBuildFile; fileRef = 75D6989E2BA3332000DF0D3B /* regula.license */; };
-		75D698A42BA40FB700DF0D3B /* regula.license in Sources */ = {isa = PBXBuildFile; fileRef = 75D6989E2BA3332000DF0D3B /* regula.license */; };
+		75D698A52BA4139900DF0D3B /* regula.license in Resources */ = {isa = PBXBuildFile; fileRef = 75D6989E2BA3332000DF0D3B /* regula.license */; };
 		9566F5A68E8B5E19E349FA13 /* Pods_MaccolValidatorEmail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EF62031887824BDFC4FE5C8 /* Pods_MaccolValidatorEmail.framework */; };
 		C9B44F2A2B9D93770020FB4B /* MaccolValidatorEmail.h in Headers */ = {isa = PBXBuildFile; fileRef = C9B44F292B9D93770020FB4B /* MaccolValidatorEmail.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9B44F312B9D93AA0020FB4B /* MaccolValidatorEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B44F302B9D93AA0020FB4B /* MaccolValidatorEmail.swift */; };
@@ -24,10 +23,10 @@
 		5EF62031887824BDFC4FE5C8 /* Pods_MaccolValidatorEmail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaccolValidatorEmail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75D698962BA3306F00DF0D3B /* DatabaseDownloading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseDownloading.swift; sourceTree = "<group>"; };
 		75D698992BA330F400DF0D3B /* DocumentReaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentReaderService.swift; sourceTree = "<group>"; };
-		75D6989B2BA3332000DF0D3B /* CertificatesPA.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CertificatesPA.bundle; sourceTree = "<group>"; };
-		75D6989C2BA3332000DF0D3B /* CertificatesTA.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CertificatesTA.bundle; sourceTree = "<group>"; };
-		75D6989D2BA3332000DF0D3B /* Certificates.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Certificates.bundle; sourceTree = "<group>"; };
-		75D6989E2BA3332000DF0D3B /* regula.license */ = {isa = PBXFileReference; lastKnownFileType = file; path = regula.license; sourceTree = "<group>"; };
+		75D6989B2BA3332000DF0D3B /* CertificatesPA.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = CertificatesPA.bundle; path = ../CertificatesPA.bundle; sourceTree = "<group>"; };
+		75D6989C2BA3332000DF0D3B /* CertificatesTA.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = CertificatesTA.bundle; path = ../CertificatesTA.bundle; sourceTree = "<group>"; };
+		75D6989D2BA3332000DF0D3B /* Certificates.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Certificates.bundle; path = ../Certificates.bundle; sourceTree = "<group>"; };
+		75D6989E2BA3332000DF0D3B /* regula.license */ = {isa = PBXFileReference; lastKnownFileType = file; name = regula.license; path = ../regula.license; sourceTree = "<group>"; };
 		A84BED3A51F20C10089D3F1A /* Pods-MaccolValidatorEmail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaccolValidatorEmail.release.xcconfig"; path = "Target Support Files/Pods-MaccolValidatorEmail/Pods-MaccolValidatorEmail.release.xcconfig"; sourceTree = "<group>"; };
 		C9B44F262B9D93770020FB4B /* MaccolValidatorEmail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MaccolValidatorEmail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B44F292B9D93770020FB4B /* MaccolValidatorEmail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaccolValidatorEmail.h; sourceTree = "<group>"; };
@@ -60,10 +59,6 @@
 			children = (
 				C9B44F302B9D93AA0020FB4B /* MaccolValidatorEmail.swift */,
 				75D698992BA330F400DF0D3B /* DocumentReaderService.swift */,
-				75D6989D2BA3332000DF0D3B /* Certificates.bundle */,
-				75D6989B2BA3332000DF0D3B /* CertificatesPA.bundle */,
-				75D6989C2BA3332000DF0D3B /* CertificatesTA.bundle */,
-				75D6989E2BA3332000DF0D3B /* regula.license */,
 				75D698962BA3306F00DF0D3B /* DatabaseDownloading.swift */,
 				C9B44F282B9D93770020FB4B /* MaccolValidatorEmail */,
 				C9B44F272B9D93770020FB4B /* Products */,
@@ -83,6 +78,10 @@
 		C9B44F282B9D93770020FB4B /* MaccolValidatorEmail */ = {
 			isa = PBXGroup;
 			children = (
+				75D6989D2BA3332000DF0D3B /* Certificates.bundle */,
+				75D6989B2BA3332000DF0D3B /* CertificatesPA.bundle */,
+				75D6989C2BA3332000DF0D3B /* CertificatesTA.bundle */,
+				75D6989E2BA3332000DF0D3B /* regula.license */,
 				C9B44F292B9D93770020FB4B /* MaccolValidatorEmail.h */,
 			);
 			path = MaccolValidatorEmail;
@@ -174,7 +173,7 @@
 				75D698A02BA3332000DF0D3B /* CertificatesTA.bundle in Resources */,
 				75D6989F2BA3332000DF0D3B /* CertificatesPA.bundle in Resources */,
 				75D698A12BA3332000DF0D3B /* Certificates.bundle in Resources */,
-				75D698A22BA3332000DF0D3B /* regula.license in Resources */,
+				75D698A52BA4139900DF0D3B /* regula.license in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +209,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75D698A42BA40FB700DF0D3B /* regula.license in Sources */,
 				C9B44F312B9D93AA0020FB4B /* MaccolValidatorEmail.swift in Sources */,
 				75D698972BA3306F00DF0D3B /* DatabaseDownloading.swift in Sources */,
 				75D6989A2BA330F400DF0D3B /* DocumentReaderService.swift in Sources */,
