@@ -16,5 +16,6 @@ spec.source       = { :git => "https://github.com/mobileexpert1/MaccolValidatorE
 spec.source_files  = 'MaccolValidatorEmail/*.swift', 'MaccolValidatorEmail/DatabaseDownloading.swift','MaccolValidatorEmail/DocumentReaderService.swift','MaccolValidatorEmail/regula.license', 'MaccolValidatorEmail/Certificates.bundle','MaccolValidatorEmail/CertificatesPA.bundle','MaccolValidatorEmail/CertificatesTA.bundle'
  spec.swift_version = '5.0'
  spec.dependency 'DocumentReader'
+ spec.frameworks = 'UIKit', 'DocumentReader'
   
 end
