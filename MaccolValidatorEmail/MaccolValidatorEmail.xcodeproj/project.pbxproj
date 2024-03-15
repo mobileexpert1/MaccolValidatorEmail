@@ -182,7 +182,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		028E90FFAF4139298C573F57 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -190,6 +190,7 @@
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
+				"$(SRCROOT)/regula.license",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
